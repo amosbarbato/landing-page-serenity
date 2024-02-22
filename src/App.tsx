@@ -1,3 +1,4 @@
+import Header from "./containers/header";
 import Global from "./style";
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
   return (
     <>
       <Global />
-      <h1>Teste</h1>
+      <Header />
     </>
   );
 }

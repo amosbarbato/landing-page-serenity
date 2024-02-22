@@ -16,12 +16,21 @@ const Global = createGlobalStyle`
     }
 
     body {
-        color: ${color.main};
+        background-color: ${color.main};
+        color: ${color.text};
     }
 
     .container {
-        max-width: 70%;
-        margin: 0 auto;
+        margin: 0 160px;
+    }
+
+    a {
+        text-decoration: none;
+        color: ${color.text};
+    }
+
+    .opn {
+        font-family: 'Open Sans', sans-serif;
     }
 
 `
