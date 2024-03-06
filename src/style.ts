@@ -33,6 +33,42 @@ const Global = createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
     }
 
+
+
+
+
+
+    // fonts styles
+    h1 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 64px;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    h6 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
 `
 
 export default Global

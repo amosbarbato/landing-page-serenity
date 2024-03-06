@@ -1,4 +1,5 @@
 import Header from "./containers/header";
+import Popular from "./containers/popular";
 import Global from "./style";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Global />
       <Header />
+      <Popular />
     </>
   );
 }
