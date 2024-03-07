@@ -40,21 +40,24 @@ const Carousel: React.FC = () => {
 
     return (
         <S.Container>
-            {carouselData.map((slide, index) => (
-                <S.Slide key={index} active={index === active}>
-                    <img src={slide.imageUrl} alt={`Slide ${index}`} />
-                    <div className="caption">
-                        <div className="title">
-                            <span>“</span>
-                            <h2>{slide.text}</h2>
-                        </div>
-                        <p className="opn">
-                            {slide.model} <br />
-                            <span>{slide.career}</span>
-                        </p>
-                    </div>
-                </S.Slide>
-            ))}
+            <S.Slider style={{ transform: `translateX(-${active * 100}%)` }}>
+                {carouselData.map((slide, index) => (
+                    <S.Slide key={index}>
+                        <img src={slide.imageUrl} alt={`Slide ${index}`} />
+                        <S.Details>
+                            <div className="title">
+                                <span>“</span>
+                                <h2>{slide.text}</h2>
+                            </div>
+                            <p className="opn">
+                                {slide.model} <br />
+                                <span>{slide.career}</span>
+                            </p>
+                        </S.Details>
+                    </S.Slide>
+                ))}
+            </S.Slider>
+            
             <S.Button onClick={prevSlide}><img src={prev} alt="Voltar" /></S.Button>
             <S.Button onClick={nextSlide}><img src={next} alt="Avançar" /></S.Button>
         </S.Container>
