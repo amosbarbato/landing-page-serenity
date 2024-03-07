@@ -18,10 +18,16 @@ const Global = createGlobalStyle`
     body {
         background-color: ${color.main};
         color: ${color.text};
+        overflow-x: hidden;
     }
 
     .container {
         margin: 0 160px;
+    }
+
+    .flex {
+        display: flex;
+        
     }
 
     a {

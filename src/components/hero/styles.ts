@@ -3,37 +3,36 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
-    margin-left: 160px;
-    height: 698px;
+    justify-content: space-between;
 
-    > div {
-        width: 50%;
+`
+
+export const Details = styled.div`
+    width: 55%;
+    padding: 220px 58px 0 0;
+
+    h1 {
+        font-size: 56px;
     }
 
-    .caption {
-        padding-top: 220px;
-        h1 {
-            font-size: 3.5rem;
-        }
+    p {
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 56px;
+        font-weight: 100;
+    }
 
-        p {
-            font-size: 16px;
-            margin-top: 16px;
-            margin-bottom: 56px;
-            font-weight: 100;
-        }
-
-        .link {
-            margin-left: 56px;
-            text-decoration: underline;
-        }
+    .link {
+        margin-left: 56px;
+        text-decoration: underline;
     }
 `
 
 export const Hero = styled.div`
+    width: 45%;
+
     img {
-        width: 100%;
+        width: 135%;
         position: relative;
         margin: -54px auto;
         z-index: -1;
